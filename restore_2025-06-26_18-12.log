@@ -1,0 +1,5 @@
+[Thu Jun 26 18:12:48 +03 2025] Starting restore...
+✓ Restored: /home/nurgul/.bashrc
+⚠️ Missing file: ./config/vimrc (skipped)
+✓ Restored: /home/nurgul/.gitconfig
+[Thu Jun 26 18:12:48 +03 2025] Restore completed.

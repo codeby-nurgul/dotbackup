@@ -1,0 +1,5 @@
+[Thu Jun 26 18:08:45 +03 2025] Starting restore...
+⚠️ Missing file: ./config/bashrc (skipped)
+⚠️ Missing file: ./config/vimrc (skipped)
+⚠️ Missing file: ./config/gitconfig (skipped)
+[Thu Jun 26 18:08:45 +03 2025] Restore completed.

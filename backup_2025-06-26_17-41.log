@@ -1,0 +1,7 @@
+[Thu Jun 26 17:41:13 +03 2025] Starting backup...
+✓ Backed up: /home/nurgul/.bashrc
+⚠️ File not found, skipped: /home/nurgul/.vimrc
+✓ Backed up: /home/nurgul/.gitconfig
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+[Thu Jun 26 17:41:13 +03 2025] Backup completed.
