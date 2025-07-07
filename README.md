@@ -31,13 +31,11 @@ dotbackup/
 ```
 ---
 
-## 🚀 How to Use
-
-### 🔁 Backup
-
+🚀 How to Use
+🔁 Backup
 bash
-./backup.sh
 
+./backup.sh
 This script:
 
 Copies selected files to the config/ folder
