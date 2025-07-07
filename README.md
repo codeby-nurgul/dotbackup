@@ -21,8 +21,8 @@ It includes:
 
 ## 📁 Folder Structure
 
-tree dotbackup/
 ```
+dotbackup/
 ├── backup.sh       # Backup script
 ├── restore.sh      # Restore script
 ├── config/         # Where backed-up files live
