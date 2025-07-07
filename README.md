@@ -31,52 +31,73 @@ dotbackup/
 ```
 ---
 
-🚀 How to Use
-🔁 Backup
-bash
+## 🚀 How to Use
 
-./backup.sh
-This script:
+- 🔁 **Backup your dotfiles**
 
-Copies selected files to the config/ folder
+  ```bash
+  ./backup.sh
+  ```
 
-Commits & pushes them to GitHub
+  This script:
+  -  Copies selected files to the `config/` folder  
+  -  Commits & pushes them to GitHub  
+  -  Sends a Slack notification on success  
 
-Sends a Slack notification on success
+- 🔄 **Restore on a new machine**
 
-###  🔄 Restore
+  ```bash
+  ./restore.sh
+  ```
 
-bash
-./restore.sh
+---
 
-# ⚙️ Setup
-1. Clone the Repo
+## ⚙️ Setup
 
-git clone https://github.com/yourusername/dotbackup.git
-cd dotbackup
-chmod +x *.sh
+-  **Clone the Repository**
 
-2. Select Files to Back Up
-   Edit inside backup.sh:
+  ```bash
+  git clone https://github.com/yourusername/dotbackup.git
+  cd dotbackup
+  chmod +x *.sh
+  ```
 
-FILES_TO_BACKUP=(
-  "$HOME/.bashrc"
-  "$HOME/.vimrc"
-  "$HOME/.gitconfig"
-)
+-  **Select Files to Back Up**
 
-3. Set Your Slack Webhook
-   Edit inside backup.sh:
+  Edit the `backup.sh` file:
 
-bash
-SLACK_WEBHOOK="https://hooks.slack.com/services/your/webhook/url"
+  ```bash
+  FILES_TO_BACKUP=(
+    "$HOME/.bashrc"
+    "$HOME/.vimrc"
+    "$HOME/.gitconfig"
+  )
+  ```
 
-⏰ Automate with Cron
+-  **Set Your Slack Webhook**
 
-Edit your crontab:
-crontab -e
+  Still in `backup.sh`:
 
-Add this line to back up daily at 8 PM:
-0 20 * * * /full/path/to/dotbackup/backup.sh
+  ```bash
+  SLACK_WEBHOOK="https://hooks.slack.com/services/your/webhook/url"
+  ```
 
+---
 
+## ⏰ Automate with Cron
+
+-  **Open crontab**
+
+  ```bash
+  crontab -e
+  ```
+
+-  **Schedule daily backup at 8 PM**
+
+  ```bash
+  0 20 * * * /full/path/to/dotbackup/backup.sh
+  ```
+
+> 📌 Use the full absolute path to `backup.sh`
+
+---
