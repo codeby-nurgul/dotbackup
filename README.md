@@ -22,10 +22,10 @@ It includes:
 ## 📁 Folder Structure
 
 dotbackup/
-├── backup.sh # Backup script
-├── restore.sh # Restore script
-├── config/ # Backed-up files live here
-├── *.log # Timestamped logs
+├── backup.sh       # Backup script
+├── restore.sh      # Restore script
+├── config/         # Where backed-up files live
+├── *.log           # Timestamped logs (can also be used for cron output)
 └── README.md
 
 ---
