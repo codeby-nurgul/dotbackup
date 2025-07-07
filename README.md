@@ -21,13 +21,14 @@ It includes:
 
 ## 📁 Folder Structure
 
-dotbackup/
+tree dotbackup/
+```
 ├── backup.sh       # Backup script
 ├── restore.sh      # Restore script
 ├── config/         # Where backed-up files live
 ├── *.log           # Timestamped logs (can also be used for cron output)
 └── README.md
-
+```
 ---
 
 ## 🚀 How to Use
